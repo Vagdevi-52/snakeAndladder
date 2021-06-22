@@ -3,29 +3,31 @@ public class SnakeAndLadder
 {
 public static void main(String[] args)
 {
-int playerposition=1;
+int playerposition=0;
+int winningposition=100;
 System.out.println("welcome to snake and ladder");
-System.out.println("player position is : "+playerposition);
+while(winningposition>playerposition)
+{
 int die = (int)Math.floor(Math.random() *10) % 7;
 System.out.println("die rolled is :" +die);
 int option =(int) (Math.floor(Math.random() * 10)%3);
 switch(option)
 {
 case 0:
-System.out.println("No play ");
+System.out.println("No play " +0);
 playerposition += 0;
 break;
 case 1:
-System.out.println("Ladder");
+System.out.println("Ladder" +die);
 playerposition +=die;
 break;
-default: System.out.println("snake");
+default: System.out.println("snake" +die);
 playerposition -=die;
 if(playerposition<0)
-playerposition=0;
+playerposition=-0;
 }
 
 System.out.println("player position is : "+playerposition);
 }
 }
-
+}
