@@ -10,7 +10,9 @@ while(winningposition>playerposition)
 {
 int die = (int)Math.floor(Math.random() *10) % 7;
 System.out.println("die rolled is :" +die);
+int remainingposition=winningposition-playerposition;
 int option =(int) (Math.floor(Math.random() * 10)%3);
+if(remainingposition>=die)
 switch(option)
 {
 case 0:
