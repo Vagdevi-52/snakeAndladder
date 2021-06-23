@@ -30,7 +30,7 @@ public class SnakeAndLadder
         default: System.out.println("snake" +die);
         playerposition -=die;
         if(playerposition<0)
-        playerposition=-0;
+        playerposition=0;
     }
  System.out.println("player position is : "+playerposition);
  System.out.println("player position is : "+playerposition);
